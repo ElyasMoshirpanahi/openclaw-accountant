@@ -283,7 +283,7 @@ export const buildTelegramMessageContext = async ({
                     chatId,
                     buildPairingReply({
                       channel: "telegram",
-                      idLine: `Your Telegram user id: ${telegramUserId}`,
+                      idLine: `آیدی تلگرامی شما: ${telegramUserId}`,
                       code,
                     }),
                   ),

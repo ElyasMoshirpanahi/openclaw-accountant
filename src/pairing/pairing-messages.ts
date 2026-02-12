@@ -8,13 +8,13 @@ export function buildPairingReply(params: {
 }): string {
   const { channel, idLine, code } = params;
   return [
-    "OpenClaw: access not configured.",
+    "چِرتکه | حسابدار هوشمند برای شما فعال نیست لطفا کد زیر را به صاحب ربات بدهید تا تایید کند",
     "",
     idLine,
     "",
-    `Pairing code: ${code}`,
+    `کد جفت‌سازی: ${code}`,
     "",
-    "Ask the bot owner to approve with:",
-    formatCliCommand(`openclaw pairing approve ${channel} ${code}`),
+    "@Retrotechdeveloper از صاحب ربات بخواهید با دستور زیر تایید کند:",
+    // formatCliCommand(`openclaw pairing approve ${channel} ${code}`),
   ].join("\n");
 }
